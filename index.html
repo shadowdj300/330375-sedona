@@ -5,8 +5,154 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+          <nav class="main-navigation-left">
+            <ul>
+              <li>
+                <a href="#">Информация</a>
+              </li>
+              <li>
+                <a href="#">Фото и видео</a>
+              </li>
+            </ul>
+          </nav>
+            <div class="small-logo">
+              <a class="to-main-page" href="#"><img src="img/small-logo.png"
+                width="140" height="70" border="0" alt="Логотип"></a>
+            </div>
+          <nav class="main-navigation-left">
+            <ul>
+              <li>
+                <a href="#">Карта штата</a>
+              </li>
+              <li>
+                <a href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="index-logo">
+        <img src="img/index-logo.png" width="460" height="80" alt="SEDONA">
+      </div>
+      <div class="title">
+        <h3 class="sedona-desc-big">Седона - небольшой городок в Аризоне, </br>
+          заслуживающий большего!</h3>
+        <p class="sedona-desc-small">Рассмотрим 5 причин, по которым седона круче,
+          чем гранд каньон!</p>
+      </div>
+      <div class="sedona-reason-block">
+        <div class="sedona-reason-text">
+          <h3 class="sedona-reason-header">Настоящий<br>городок</h3>
+          <p class="sedona-reason-number">- №1 -</h3>
+          <p class="sedona-reason-text">Седона не аттракцион для туристов, <br>
+            там течет своя жизнь</h3>
+        </div>
+        <div class="sedona-reason-image">
+          <img src="img/photo-1.jpg" width="800" height="260" alt="hotel-view">
+        </div>
+      </div>
+      <div>
+        <ul class="reason-list">
+          <li>
+            <div class="reason-list-icon">
+              <img src="img/house.jpg" width="70" height="70" alt="house">
+            <div>
+            <h3 class="reason-list-header">Жилье</h3>
+            <p class="reason-list-small">Рекомендуем пожить в настоящем<br>
+              мотеле, все как в кино!</p>
+          </li>
+          <li>
+            <div class="reason-list-icon">
+              <img src="img/food.jpg" width="70" height="70" alt="food">
+            <div>
+            <h3 class="reason-list-header">Еда</h3>
+            <p class="reason-list-small">Всегда заказывайте фирменный бургер,<br>
+              вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <div class="reason-list-icon">
+              <img src="img/suveniers.jpg" width="70" height="70" alt="suveniers">
+            <div>
+            <h3 class="reason-list-header">Сувениры</h3>
+            <p class="reason-list-small">Не только китайского, но и местного<br>
+              производства!</p>
+          </li>
+        </ul>
+      </div>
+      <div class="sedona-reason-block-reverse">
+        <div class="sedona-reason-image">
+          <img src="img/photo-2.jpg" width="800" height="260" alt="canyon-bridge">
+        </div>
+        <div class="sedona-reason-text">
+          <h3 class="sedona-reason-header">Там есть<br>мост дьявола</h3>
+          <p class="sedona-reason-number">- №2 -</h3>
+          <p class="sedona-reason-text">Да, по нему можно пройти! Если конечно<br>
+            вы осмелитесь</h3>
+        </div>
+      </div>
+      <div class="sedona-reason-small">
+        <div class="sedona-reason-third">
+          <h3 class="sedona-reason-header">Небольшая<br>площадь</h3>
+          <p class="reason-reason-number">— №3 —</p>
+          <p class="reason-reason-text">Все достопримечательности<br>
+            находятся очень близко</p>
+        </div>
+        <div class="sedona-reason-fourth">
+          <h3 class="sedona-reason-header">Красивая<br>дорога</h3>
+          <p class="reason-reason-number">— №4 —</p>
+          <p class="reason-reason-text">Ехать в седону из лас-вегаса совсем<br>
+            не скучно!</p>
+        </div>
+        <div class="sedona-reason-fifth">
+          <h3 class="sedona-reason-header">Мало<br>туристов</h3>
+          <p class="reason-reason-number">— №5 —</p>
+          <p class="reason-reason-text">Большинство едет в гранд каньон и<br>
+            толпится там</p>
+        </div>
+      </div>
+      <div class="iterest-block">
+        <h2 class="iterest-block-header">Заинтересовались?</h2>
+        <p class="iterest-block-text">Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+      <div class="hotel-search-btn">
+        <a href="#">
+          <h3 class="hotel-search-btn-text">Поиск гостиницы в Седоне</h3>
+        </a>
+      </div>
+      <div class="hotel-search">
+        <form class="hotel-search-form" action="#" method="post">
+          <label class="hotel-search-label" for="date-in">Дата заезда:</label>
+          <input type="date" name="date-in" id="date-in" value="">
+          <label class="hotel-search-label" for="date-out">Дата выезда:</label>
+          <input type="date" name="date-out" id="date-out" value="">
+          <label class="hotel-search-label" for="adults">Взрослые:</label>
+          <input type="number" name="adults" id="adults" min="0" max="10" step="1" value="2">
+          <!--Вопрос с счетчиком с плюс-минус-->
+          <label class="hotel-search-label" for="adults">Дети:</label>
+          <input type="number" name="children" id="children" min="0" max="10" step="1" value="0">
+          <a class="btn-submit" href="#">Найти</a>
+        </form>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="hashtag">
+          <h3>#VISITSEDONA
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yotube" href="#">Youtube</a>
+        </section>
+        <section class="footer-copyright">
+          <img src="img/html-academy.png"
+            width="125" height="25" border="0" alt="html-academy">
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
