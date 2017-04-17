@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+          <nav class="main-navigation-left">
+            <ul>
+              <li>
+                <a href="#">Информация</a>
+              </li>
+              <li>
+                <a href="#">Фото и видео</a>
+              </li>
+            </ul>
+          </nav>
+            <div class="small-logo">
+              <a class="to-main-page" href="#"><img src="img/small-logo.png"
+                width="140" height="70" border="0" alt="Логотип"></a>
+            </div>
+          <nav class="main-navigation-left">
+            <ul>
+              <li>
+                <a href="#">Карта штата</a>
+              </li>
+              <li>
+                <a href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hotel-filters">
+        <div class="hotel-filters-infrastructure">
+          <h2 class="hotel-filters-title">Инфраструктура:</h2>
+            <form class="filters-inf" action="#" method="post">
+              <input type="checkbox" name="infrastructure" value="1" id="inf-1"
+              checked>
+              <label for="inf-1">Инфраструктура</label>
+              <input type="checkbox" name="infrastructure" value="2" id="inf-2">
+              <label for="inf-2">Парковка</label>
+              <input type="checkbox" name="infrastructure" value="3" id="inf-3">
+              <label for="inf-3">Wi-fi</label>
+            </form>
+          </div>
+          <div class="hotel-filters-type">
+            <h2 class="hotel-filters-title">Тип жилья:</h2>
+              <form class="filters-type" action="#" method="post">
+                <input type="checkbox" name="type" value="1" id="type-1"
+                checked>
+                <label for="type-1">Гостинца</label>
+                <input type="checkbox" name="type" value="2" id="type-2"
+                checked>
+                <label for="type-2">Мотель</label>
+                <input type="checkbox" name="type" value="3" id="type-3"
+                checked>
+                <label for="type-3">Апартаменты</label>
+              </form>
+            </div>
+            <div class="hotel-filter-price">
+              <p class="filter-price-header">Стоимость в сутки (Р):</p>
+              <div class="filter-price-search">
+                <p class="price-low">от 0</p>
+                <p class="price-high">до 3000</p>
+              </div>
+              <div class="range-control">
+                <form class="price-range" action="#" method="post">
+                <input type="range" min="0" max="4000" step="500" value="3000">
+              </form>
+            </div>
+            <a href="#" class="search-button">Показать</a>
+          </div>
+      </section>
+      
+    </main>
+  </body>
+</html>
