@@ -1,0 +1,73 @@
+body {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", Sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sedona-desc-big {
+  font-size: 21px;
+}
+
+.sedona-desc-small {
+  color: #333333;
+  font-weight: 400px;
+}
+
+.sedona-reason-header {
+  color: #ffffff;
+  line-height: 21px;
+  font-size: 21px;
+}
+
+.sedona-reason-number {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sedona-reason-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reason-list {
+width: 252px;
+height: 81px;
+line-height: 21px;
+text-transform: uppercase;
+}
+
+.reason-list-header {
+color: #000000;
+font-size: 21px;
+font-weight: 700;
+}
+
+.reason-list-small {
+color: #333333;
+font-size: 14px;
+font-weight: 400;
+}
+
+.iterest-block {
+width: 434px;
+height: 96px;
+line-height: 24px;
+text-transform: uppercase;
+}
+
+.iterest-block-header {
+color: #000000;
+font-size: 30px;
+font-weight: 700;
+}
+
+.interest-block-text {
+color: #333333;
+font-size: 14px;
+font-weight: 400;
+}
