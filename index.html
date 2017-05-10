@@ -7,36 +7,33 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-          <nav class="main-navigation-left">
+      <div class="container clearfix">
+          <nav class="main-navigation">
             <ul>
               <li>
-                <a class="nav-element" href="#">Информация</a>
+                <a class="nav-element nav-active" href="index.html">Информация</a>
               </li>
               <li>
                 <a class="nav-element"  href="#">Фото и видео</a>
               </li>
-            </ul>
-          </nav>
-            <div class="small-logo">
-              <a class="to-main-page" href="#"><img src="img/small-logo.png"
-                width="140" height="70" border="0" alt="Логотип"></a>
-            </div>
-          <nav class="main-navigation-left">
-            <ul>
+              <li class="small-logo">
+                <a class="nav-element to-main-page" href="index.html"><img src="img/small-logo.png"
+                  width="140" height="70" border="0" alt="Логотип"></a>
+              </li>
               <li>
                 <a class="nav-element"  href="#">Карта штата</a>
               </li>
               <li>
-                <a class="nav-element"  href="#">Гостиницы</a>
+                <a class="nav-element"  href="inner.html">Гостиницы</a>
               </li>
             </ul>
           </nav>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="index-logo">
         <img src="img/Main-logo.png" width="458" height="352" alt="SEDONA">
+        <div class="img-mask"></div>
       </div>
       <div class="title">
         <h3 class="sedona-desc-big">Седона - небольшой городок в Аризоне,
@@ -44,18 +41,20 @@
         <p class="sedona-desc-small">Рассмотрим 5 причин, по которым седона круче,
           чем гранд каньон!</p>
       </div>
-      <div class="sedona-reason-block">
-        <div class="sedona-reason-text">
+      <div class="sedona-reason-block clearfix">
+        <div class="sedona-reason">
+          <div class="text-wrapper">
           <h3 class="sedona-reason-header">Настоящий городок</h3>
           <p class="sedona-reason-number">- №1 -</h3>
           <p class="sedona-reason-text">Седона не аттракцион для туристов,
             там течет своя жизнь</h3>
+          </div>
         </div>
         <div class="sedona-reason-image">
-          <img src="img/reason-1.jpg" width="800" height="260" alt="hotel-view">
+          <img src="img/reason-1.jpg" width="800" height="256" alt="hotel-view">
         </div>
       </div>
-      <div class="reason">
+      <div class="reason clearfix">
         <ul class="reason-list">
           <li>
             <div class="reason-list-icon">
@@ -83,40 +82,49 @@
           </li>
         </ul>
       </div>
-      <div class="sedona-reason-block-reverse">
+      <div class="sedona-reason-block-reverse clearfix">
         <div class="sedona-reason-image">
-          <img src="img/reason-2.jpg" width="800" height="260" alt="canyon-bridge">
+          <img src="img/reason-2.jpg" width="800" height="256" alt="canyon-bridge">
         </div>
-        <div class="sedona-reason-text">
+        <div class="sedona-reason">
+          <div class="text-wrapper">
           <h3 class="sedona-reason-header">Там есть мост дьявола</h3>
           <p class="sedona-reason-number">— №2 —</h3>
           <p class="sedona-reason-text">Да, по нему можно пройти! Если конечно
             вы осмелитесь</h3>
+          </div>
         </div>
       </div>
-      <div class="sedona-reason-small">
+      <div class="sedona-reason-small clearfix">
         <div class="sedona-reason-third">
+          <div class="text-wrapper-small">
           <h3 class="sedona-reason-header">Небольшая площадь</h3>
           <p class="reason-reason-number">— №3 —</p>
           <p class="reason-reason-text">Все достопримечательности
             находятся очень близко</p>
+          </div>
         </div>
         <div class="sedona-reason-fourth">
+          <div class="text-wrapper-small">
           <h3 class="sedona-reason-header">Красивая дорога</h3>
           <p class="reason-reason-number">— №4 —</p>
           <p class="reason-reason-text">Ехать в седону из лас-вегаса совсем
             не скучно!</p>
+          </div>
         </div>
         <div class="sedona-reason-fifth">
+          <div class="text-wrapper-small">
           <h3 class="sedona-reason-header">Мало туристов</h3>
           <p class="reason-reason-number">— №5 —</p>
           <p class="reason-reason-text">Большинство едет в гранд каньон и
             толпится там</p>
+          </div>
         </div>
       </div>
-      <div class="iterest-block">
-        <h2 class="iterest-block-header">Заинтересовались?</h2>
-        <p class="iterest-block-text">Укажите предполагаемые даты поездки,
+      <div class="search clearfix">
+      <div class="interest-block">
+        <h2 class="interest-block-header">Заинтересовались?</h2>
+        <p class="interest-block-text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
       <div class="hotel-search-btn">
@@ -138,6 +146,7 @@
           <a class="btn-submit" href="#">Найти</a>
         </form>
       </div>
+    </div>
     </main>
     <footer class="main-footer">
       <div class="container">

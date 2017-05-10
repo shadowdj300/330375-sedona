@@ -5,6 +5,22 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+.p {
+ width: 489px;
+ height: 13px;
+ font-family: "PT Sans";
+ font-size: 14px;
+ color: #000000;
+ font-weight: 400;
+ line-height: 26px;
+ text-transform: uppercase;
 }
 
 .sedona-desc-big {
@@ -32,13 +48,6 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
-}
-
-.reason-list {
-width: 252px;
-height: 81px;
-line-height: 21px;
-text-transform: uppercase;
 }
 
 .reason-list-header {
@@ -70,4 +79,250 @@ font-weight: 700;
 color: #333333;
 font-size: 14px;
 font-weight: 400;
+}
+
+.container {
+  display: table;
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  background: #ffffff;
+  z-index: 60;
+}
+
+.main-header {
+  position: static;
+  top: -56px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.main-navigation a {
+  display: inline-block;
+  width: 237px;
+  height: 56px;
+  font-size: 14px;
+  line-height: 56px;
+}
+
+.main-navigation a.nav-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  vertical-align: baseline;
+  background: tranperent;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li.small-logo {
+  position: relative;
+  width: 237px;
+  height: 0;
+}
+
+.small-logo a.to-main-page {
+  position: absolute;
+  z-index: 10;
+  height: 70px;
+  top: -32px;
+  left: 0;
+}
+
+.main-navigation li:last-child {
+  padding-right: 0;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.index-logo {
+  height: 512px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/background-photo.jpg) 50% -56px no-repeat;
+}
+
+.index-logo img {
+  margin-top: 76px;
+}
+
+.img-mask {
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  left: 0;
+  bottom: 0;
+  background: url(../img/shape1.png)
+}
+
+.title {
+  padding: 55px;
+}
+
+.sedona-desc-big {
+  font-weight: 700;
+  width: 444px;
+  margin: 0 auto 34px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sedona-desc-small {
+  color: #333333;
+}
+
+.sedona-reason-block .sedona-reason {
+  float: left;
+  box-sizing: border-box;
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.text-wrapper {
+  box-sizing: border-box;
+  padding: 45px;
+  padding-top: 53px;
+  height: 256px;
+}
+
+.sedona-reason-header {
+  width: 153px;
+  margin: 0 auto 34px;
+  margin-bottom: 8px;
+}
+
+.sedona-reason-number {
+  margin-top: 10px;
+}
+
+.number:before {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 9px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+  margin-right: 6px;
+}
+
+.number:after {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 9px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+  margin-left: 6px;
+}
+
+.sedona-reason-text {
+  line-height: 21px;
+  margin: 20px auto 0;
+}
+
+.sedona-reason-block .sedona-reason-image {
+  float: right;
+  height: 256px;
+}
+
+.reason-list li{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 394px;
+  height: 330px;
+}
+
+.reason-list-icon {
+  display: block;
+  box-sizing: border-box;
+  padding: 50px 45px 0;
+}
+
+.sedona-reason-block-reverse .sedona-reason {
+  float: right;
+  box-sizing: border-box;
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.sedona-reason-block-reverse .sedona-reason-image {
+  float: left;
+  height: 256px;
+}
+
+.sedona-reason-small .sedona-reason-header {
+  color: #000000;
+}
+
+.text-wrapper-small {
+  padding: 45px 40px;
+  box-sizing: border-box;
+}
+
+.sedona-reason-small {
+  width: 1200px;
+  heigth: 256px;
+  background-color: #efefef;
+}
+.sedona-reason-third {
+  float: left;
+  width: 400px;
+}
+
+.sedona-reason-fourth {
+  float: left;
+  width: 400px;
+}
+
+.sedona-reason-fifth {
+  float: right;
+  width: 400px;
+  margin-right:0
+}
+
+.reason-reason-number {
+  color: #333333;
+}
+
+.reason-reason-text {
+  color: #333333;
+}
+
+.search {
+  padding-top: 55px;
+  position: relative;
 }
