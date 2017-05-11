@@ -6,8 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container clearfix">
+    <div class="container shadow">
+    <header class="main-header clearfix">
           <nav class="main-navigation">
             <ul>
               <li>
@@ -28,7 +28,6 @@
               </li>
             </ul>
           </nav>
-      </div>
     </header>
     <main class="container clearfix">
       <div class="index-logo">
@@ -100,7 +99,7 @@
           <div class="text-wrapper-small">
           <h3 class="sedona-reason-header">Небольшая площадь</h3>
           <p class="reason-reason-number">— №3 —</p>
-          <p class="reason-reason-text">Все достопримечательности
+          <p class="reason-reason-text">Все достопримечательности<br>
             находятся очень близко</p>
           </div>
         </div>
@@ -108,7 +107,7 @@
           <div class="text-wrapper-small">
           <h3 class="sedona-reason-header">Красивая дорога</h3>
           <p class="reason-reason-number">— №4 —</p>
-          <p class="reason-reason-text">Ехать в седону из лас-вегаса совсем
+          <p class="reason-reason-text">Ехать в седону из лас-вегаса совсем<br>
             не скучно!</p>
           </div>
         </div>
@@ -116,7 +115,7 @@
           <div class="text-wrapper-small">
           <h3 class="sedona-reason-header">Мало туристов</h3>
           <p class="reason-reason-number">— №5 —</p>
-          <p class="reason-reason-text">Большинство едет в гранд каньон и
+          <p class="reason-reason-text">Большинство едет в гранд каньон и<br>
             толпится там</p>
           </div>
         </div>
@@ -124,39 +123,57 @@
       <div class="search clearfix">
       <div class="interest-block">
         <h2 class="interest-block-header">Заинтересовались?</h2>
-        <p class="interest-block-text">Укажите предполагаемые даты поездки,
+        <p class="interest-block-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <div class="hotel-search-btn">
-        <a href="#">
-          <h3 class="hotel-search-btn-text">Поиск гостиницы в Седоне</h3>
-        </a>
-      </div>
-      <div class="hotel-search">
-        <form class="hotel-search-form" action="#" method="post">
-          <label class="hotel-search-label" for="date-in">Дата заезда:</label>
-          <input type="date" name="date-in" id="date-in" value="">
-          <label class="hotel-search-label" for="date-out">Дата выезда:</label>
-          <input type="date" name="date-out" id="date-out" value="">
-          <label class="hotel-search-label" for="adults">Взрослые:</label>
-          <input type="number" name="adults" id="adults" min="0" max="10" step="1" value="2">
-          <!--Вопрос с счетчиком с плюс-минус-->
-          <label class="hotel-search-label" for="adults">Дети:</label>
-          <input type="number" name="children" id="children" min="0" max="10" step="1" value="0">
-          <a class="btn-submit" href="#">Найти</a>
-        </form>
-      </div>
+      <div class="map"></div>
+      <form class="hotel-search-form" action="#" method="post">
+        <h3 class="hotel-search-btn-text">Поиск гостиницы в Седоне</h3>
+        <div class="hotel-search">
+          <div>
+            <label class="hotel-search-label" for="date-in">Дата заезда:</label>
+            <span class="date-wrapper">
+              <input type="text" name="date-in" id="date-in" value="24 Апреля 2017">
+              <label class="calendar" for="date-in">Дата заезда:</label>
+            </span>
+          </div>
+          <div>
+            <label class="hotel-search-label" for="date-out">Дата выезда:</label>
+              <span class="date-wrapper">
+              <input type="text" name="date-out" id="date-out" value="4 Июля 2017">
+              <label class="calendar" for="date-out">Дата выезда:</label>
+            </span>
+          </div>
+          <div class="adults">
+            <label class="hotel-search-label" for="adults">Взрослые:</label>
+            <span class="people-wrapper">
+              <a class="minus" href="#">minus</a>
+              <input type="text" name="adults" id="adults" min="0" max="10" step="1" value="2">
+              <a class="plus" href="#">minus</a>
+            </span>
+          </div>
+          <div class="children">
+            <label class="hotel-search-label" for="children">Дети:</label>
+            <span class="people-wrapper">
+              <a class="minus" href="#">minus</a>
+              <input type="text" name="children" id="children" min="0" max="10" step="1" value="0">
+              <a class="plus" href="#">minus</a>
+            </span>
+          </div>
+          <input type="submit" value="Найти"disabled>
+        </div>
+      </form>
     </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="clearfix">
         <section class="hashtag">
           <h3>#VISITSEDONA
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-yotube" href="#">Youtube</a>
+          <a class="social-btn social-btn-youtube" href="#">Youtube</a>
         </section>
         <section class="footer-copyright">
           <img src="img/html-academy.png"
@@ -164,5 +181,6 @@
         </section>
       </div>
     </footer>
+  </div>
   </body>
 </html>
