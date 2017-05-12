@@ -392,7 +392,6 @@ li.small-logo {
   top: 200px;
   margin-left: -284px;
   box-sizing: border-box;
-  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   text-align: left;
   font-weight: 700;
   font-size: 0;
@@ -427,6 +426,7 @@ li.small-logo {
  display: block;
  animation-name: bounce;
  animation-duration: 0.3s;
+ box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
  }
 
 .hotel-search div {
