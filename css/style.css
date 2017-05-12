@@ -727,7 +727,7 @@ footer {
 }
 
 .filters-inf input[type="checkbox"] {
-   display: none;
+  display: none;
 }
 
 .filters-inf input[type="checkbox"] + label::before {
@@ -756,8 +756,12 @@ footer {
   font-weight: 400;
 }
 
+.filters-inf label {
+  cursor: pointer;
+}
+
 .filters-type input[type="checkbox"] {
-   display: none;
+  display: none;
 }
 
 .filters-type input[type="checkbox"] + label::before {
@@ -784,6 +788,7 @@ footer {
 
 .filters-type label {
   font-weight: 400;
+  cursor: pointer;
 }
 
 .hotel-filter-price {
