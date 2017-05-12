@@ -383,12 +383,6 @@ li.small-logo {
   color: #333333;
 }
 
-.map {
-  background: url(../img/map.jpg) no-repeat;
-  width: 1200px;
-  height: 593px;
-}
-
 .hotel-search-form {
   width: 568px;
   min-height: 480px;
@@ -411,6 +405,7 @@ li.small-logo {
   margin: 0 auto;
   background-color: #766357;
   text-align: center;
+  cursor: pointer;
 }
 
 .hotel-search {
@@ -418,7 +413,21 @@ li.small-logo {
   padding: 56px 55px;
   min-height: 395px;
   box-sizing: border-box;
+  display: none;
 }
+
+@keyframes bounce {
+ 0% { transform: translateY(-500px); }
+ 30% { transform: translateY(-300px); }
+ 70% { transform: translateY(-100px); }
+ 100% { transform: translateY(0px); }
+ }
+
+ .hotel-search-show {
+ display: block;
+ animation-name: bounce;
+ animation-duration: 0.3s;
+ }
 
 .hotel-search div {
   margin-bottom: 29px;
