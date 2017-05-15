@@ -1,5 +1,5 @@
 var link = document.querySelector(".hotel-search-btn-text");
-var popup = document.querySelector(".hotel-search");
+var popup = document.querySelector(".hotel-search-wrapper");
 var form = document.querySelector(".hotel-search-form");
 var datein = form.querySelector("[name=date-in]");
 var dateout = form.querySelector("[name=date-out]");

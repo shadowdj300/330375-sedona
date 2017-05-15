@@ -6,20 +6,24 @@
     local("PT-Sans-Regular"),
     url("../fonts/ptsans.woff") format("woff"),
     url("../fonts/ptsans.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
   src:
     local("PT-Sans-Bold"),
     url("../fonts/ptsansbold.woff") format("woff"),
     url("../fonts/ptsansbold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
   font-size: 14px;
   line-height: 26px;
-  font-family: "PT Sans", Sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -31,14 +35,10 @@ body {
   background-color: #f2f2f2;
 }
 
-main {
-  padding: 0px 0px 120px;
-}
-
 .p {
   width: 489px;
   height: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-size: 14px;
   color: #000000;
   font-weight: 400;
@@ -74,7 +74,7 @@ main {
 }
 
 .reason-list-header {
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   color: #000000;
   font-size: 21px;
   font-weight: 700;
@@ -94,7 +94,7 @@ main {
 }
 
 .iterest-block-header {
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -152,16 +152,24 @@ li {
 
 .main-navigation li {
   display: inline-block;
+  width: 240px;
+  height: 56px;
 }
 
 .main-navigation a {
-  font-family: "PT Sans Bold",sans-serif;
-  display: inline-block;
-  width: 235px;
-  height: 56px;
+  font-family: "PT Sans", "Georgia", Sans-serif;
+  display: inline;
   font-size: 14px;
   line-height: 56px;
   background: tranperent;
+}
+
+.main-navigation-left {
+  float: left;
+}
+
+.main-navigation-right {
+  float: right;
 }
 
 .main-navigation .nav-active {
@@ -177,22 +185,14 @@ a {
   padding: 0;
 }
 
-li.small-logo {
-  position: relative;
-  width: 237px;
-  height: 0;
-}
-
-.small-logo .to-main-page {
+a.logo-element {
   position: absolute;
+  width: 240px;
+  height: 0;
   z-index: 30;
   height: 70px;
-  top: -32px;
-  left: 0;
-}
-
-.main-navigation li:last-child {
-  padding-right: 0;
+  top: 0px;
+  left: 481px;
 }
 
 .main-navigation a:hover {
@@ -200,11 +200,12 @@ li.small-logo {
 }
 
 .index-logo {
-  height: 512px;
+  height: 508px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   background: url(../img/background-photo.jpg) 50% -56px no-repeat;
+  width: 100%;
 }
 
 .index-logo img {
@@ -213,7 +214,7 @@ li.small-logo {
 
 .img-mask {
   position: absolute;
-  width: 1200px;
+  width: 100%;
   height: 57px;
   left: 0;
   bottom: 0;
@@ -225,7 +226,7 @@ li.small-logo {
 }
 
 .sedona-desc-big {
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-weight: 700;
   width: 444px;
   margin: 0 auto 34px;
@@ -252,7 +253,7 @@ li.small-logo {
 }
 
 .sedona-reason-header {
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   width: 153px;
   margin: 0 auto 34px;
   margin-bottom: 8px;
@@ -355,7 +356,7 @@ li.small-logo {
 }
 
 .reason-reason-text {
-  font-family: "PT Sans", Sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   color: #333333;
   font-weight: 400;
 }
@@ -379,22 +380,12 @@ li.small-logo {
   margin: 0;
   width: 435px;
   line-height: 24px;
-  margin: 28px auto 129px;
+  margin: 28px auto 45px;
   color: #333333;
 }
 
-.hotel-search-form {
-  width: 568px;
-  min-height: 480px;
-  position: absolute;
-  z-index: 50;
-  left: 50%;
-  top: 200px;
-  margin-left: -284px;
-  box-sizing: border-box;
-  text-align: left;
-  font-weight: 700;
-  font-size: 0;
+.hotel-search {
+  margin: 0, auto;
 }
 
 .hotel-search-btn-text {
@@ -402,12 +393,26 @@ li.small-logo {
   line-height: 86px;
   color: #ffffff;
   margin: 0 auto;
+  width: 568px;
   background-color: #766357;
   text-align: center;
   cursor: pointer;
 }
 
-.hotel-search {
+.hotel-search-form {
+  width: 568px;
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  top: 288px;
+  margin-left: -284px;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0;
+}
+
+.hotel-search-wrapper {
   background-color: #ffffff;
   padding: 56px 55px;
   min-height: 395px;
@@ -416,8 +421,8 @@ li.small-logo {
 }
 
 @keyframes bounce {
- 0% { transform: translateY(-500px); }
- 30% { transform: translateY(-300px); }
+ 0% { transform: translateY(-300px); }
+ 30% { transform: translateY(-200px); }
  70% { transform: translateY(-100px); }
  100% { transform: translateY(0px); }
  }
@@ -429,7 +434,7 @@ li.small-logo {
  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
  }
 
-.hotel-search div {
+.hotel-search-wrapper div {
   margin-bottom: 29px;
 }
 
@@ -440,13 +445,13 @@ li.small-logo {
   line-height: 21px;
 }
 
-.hotel-search div .date-wrapper {
+.hotel-search-wrapper .date-wrapper {
   display: inline-block;
   position: relative;
   width: 346px;
 }
 
-.hotel-search input[type="text"] {
+.hotel-search-wrapper input[type="text"] {
   width: 100%;
   height: 38px;
   background-color: #f2f2f2;
@@ -455,20 +460,20 @@ li.small-logo {
   text-transform: uppercase;
   padding: 0 40px 0 14px;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
 
-.hotel-search input[type="text"]:hover {
+.hotel-search-wrapper input[type="text"]:hover {
   background-color: #ececec;
 }
 
-.hotel-search input[type="text"]:focus {
+.hotel-search-wrapper input[type="text"]:focus {
   background-color: #ffffff;
 }
 
-.hotel-search .calendar {
+.hotel-search-wrapper .calendar {
   width: 22px;
   height: 22px;
   background: url(../img/calendar.png) no-repeat;
@@ -479,7 +484,7 @@ li.small-logo {
   cursor: pointer;
 }
 
-.hotel-search div.adults {
+.hotel-search-wrapper div.adults {
   float: left;
   display: inline-block;
   box-sizing: border-box;
@@ -487,7 +492,7 @@ li.small-logo {
   width: 233px;
 }
 
-.hotel-search div.children {
+.hotel-search-wrapper div.children {
   float: right;
   display: inline-block;
   box-sizing: border-box;
@@ -505,14 +510,14 @@ li.small-logo {
   width: 114px;
 }
 
-.hotel-search input[id="adults"] {
+.hotel-search-wrapper input[id="adults"] {
   width: 100%;
   padding: 0 40px;
   text-align: center;
   box-sizing: border-box;
 }
 
-.hotel-search input[id="children"] {
+.hotel-search-wrapper input[id="children"] {
   width: 100%;
   padding: 0 40px;
   text-align: center;
@@ -557,8 +562,7 @@ li.small-logo {
   background: url(../img/plus-blue.png) no-repeat 50% 50%;
 }
 
-
-.hotel-search input[type="submit"] {
+.hotel-search-wrapper input[type="submit"] {
   width: 458px;
   height: 58px;
   font-size: 21px;
@@ -567,37 +571,42 @@ li.small-logo {
   background-color: #81b3d2;
   color: #ffffff;
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
+  cursor: pointer;
 }
 
-.hotel-search input[type="submit"]:hover {
+.hotel-search-wrapper input[type="submit"]:hover {
   background-color: #68a0c0;
 }
 
-.hotel-search input[type="submit"]:active {
+.hotel-search-wrapper input[type="submit"]:active {
   background-color: #5698bc;
   opacity: 0.3;
 }
 
+.map {
+  position: relative;
+  margin-bottom: -120px;
+}
+
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   box-sizing: border-box;
   width: 1200px;
   height: 120px;
   background: rgba(255, 255, 255, 0.9);
-  padding: 36px 0;
+  z-index: 30;
 }
 
 .hashtag {
   float: left;
   box-sizing: border-box;
   width: 400px;
+  margin-top: 26px;
 }
 
 .hashtag h3 {
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-size: 21px;
   vertical-align: middle;
 }
@@ -606,6 +615,7 @@ footer {
   float: left;
   box-sizing: border-box;
   width: 400px;
+  margin-top: 36px;
 }
 
 .footer-social .social-btn {
@@ -660,6 +670,7 @@ footer {
   float: right;
   box-sizing: border-box;
   width: 400px;
+  margin-top: 36px;
 }
 
 .footer-copyright .academy{
@@ -843,7 +854,7 @@ footer {
 }
 
 .price-number input {
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-size: 14px;
   box-sizing: border-box;
   width: 82px;
@@ -954,7 +965,7 @@ footer {
 }
 
 .results-title {
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -1105,7 +1116,7 @@ a.sorting-item-active {
 }
 
 .item-title {
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-size: 21px;
   line-height: 16px;
   font-weight: 700;
@@ -1176,7 +1187,7 @@ a.sorting-item-active {
   outline: none;
   font-size: 14px;
   line-height: 21px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -1205,7 +1216,7 @@ a.sorting-item-active {
   padding: 5px 17px;
   font-size: 14px;
   line-height: 21px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Georgia", Sans-serif;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
