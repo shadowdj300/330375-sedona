@@ -9,33 +9,35 @@
   <body>
     <div class="container shadow">
     <header class="main-header clearfix">
-          <nav class="main-navigation">
-            <ul>
-              <li>
-                <a class="nav-element" href="#">Информация</a>
-              </li>
-              <li>
-                <a class="nav-element"  href="#">Фото и видео</a>
-              </li>
-              <li class="small-logo">
-                <a class="nav-element to-main-page" href="index.html"><img src="img/small-logo.png"
-                  width="140" height="70" border="0" alt="Логотип"></a>
-              </li>
-              <li>
-                <a class="nav-element"  href="#">Карта штата</a>
-              </li>
-              <li>
-                <a class="nav-element nav-active"  href="inner.html">Гостиницы</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="main-navigation main-navigation-left">
+              <ul>
+                <li>
+                  <a class="nav-element" href="info.html">Информация</a>
+                </li>
+                <li>
+                  <a class="nav-element"  href="photo.html">Фото и видео</a>
+                </li>
+              </ul>
+            </nav>
+                  <a class="logo-element to-main-page" href="index.html"><img src="img/small-logo.png"
+                    width="140" height="70" border="0" alt="Логотип"></a>
+            <nav class="main-navigation main-navigation-right">
+              <ul>
+                <li>
+                  <a class="nav-element"  href="map.html">Карта штата</a>
+                </li>
+                <li>
+                  <a class="nav-element"  href="inner.html">Гостиницы</a>
+                </li>
+              </ul>
+            </nav>
     </header>
     <main class="container">
       <section class="hotel-filters clearfix">
         <div class="left-column">
         <div class="hotel-filters-infrastructure">
           <h2 class="hotel-filters-title">Инфраструктура:</h2>
-            <form class="filters-inf" action="#" method="post">
+            <form class="filters-inf" action="#" method="post" id="inf">
               <div>
                 <input type="checkbox" name="infrastructure" value="1" id="inf-1"
               checked>
@@ -53,11 +55,11 @@
           </div>
           <div class="hotel-filters-type">
             <h2 class="hotel-filters-title">Тип жилья:</h2>
-              <form class="filters-type" action="#" method="post">
+              <form class="filters-type" action="#" method="post" id="type">
                 <div>
                   <input type="checkbox" name="type" value="1" id="type-1"
                 checked>
-                  <label for="type-1">Гостинца</label>
+                  <label for="type-1">Гостиница</label>
                 </div>
                 <div>
                   <input type="checkbox" name="type" value="2" id="type-2"
@@ -76,7 +78,7 @@
             <div class="hotel-filter-price">
               <p class="filter-price-header">Стоимость в сутки (Р):</p>
               <div class="filter-price-search">
-                <form class="price-number" action="#" method="post">
+                <form class="price-number" action="#" method="post" id="price">
                   <div class="price-low">
                     <label for="price-low">От</label>
                     <input id="price-low" class="min-price" type="number"
@@ -95,7 +97,7 @@
                 <button class="scale-slider scale-slider-max" type="button" tabindex="-1"></button>
               </div>
             </div>
-            <a href="#" class="search-button">Показать</a>
+            <a href="submit.html" class="search-button" onclick="" >Показать</a>
           </div>
           </div>
       </section>
@@ -119,7 +121,7 @@
         </div>
         <div class="searched-items">
           <div class="item">
-            <div class="results-wrap">
+            <div class="searched-wrap">
               <div class="item-wrap">
                 <div class="item-pic"><img src="img/hotel-img-1.jpg" width="135"
                 height="90" alt="Amara Resort & Spa"></div>
@@ -144,10 +146,10 @@
             </div>
           </div>
           <div class="item">
-            <div class="results-wrap">
+            <div class="searched-wrap">
               <div class="item-wrap">
                 <div class="item-pic"><img src="img/hotel-img-2.jpg" width="135"
-                height="90" alt="Desert quaill inn"></div>
+                height="90" alt="Desert quail inn"></div>
                 <div class="item-description">
                   <a href="#" class="item-title">Desert quaill inn</a>
                   <div class="item-text">
@@ -169,7 +171,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="results-wrap">
+            <div class="searched-wrap">
               <div class="item-wrap">
                 <div class="item-pic"><img src="img/hotel-img-3.jpg" width="135"
                 height="90" alt="Villas at poco diablo"></div>
@@ -197,7 +199,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="clearfix">
+      <div class="page-footer clearfix">
         <section class="hashtag">
           <h3>#VISITSEDONA</h3>
         </section>
@@ -207,7 +209,7 @@
           <a class="social-btn social-btn-youtube" href="#">Youtube</a>
         </section>
         <section class="footer-copyright">
-          <a class="academy" href="#">Html-academy</a>
+          <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">Html-academy</a>
         </section>
       </div>
     </footer>
