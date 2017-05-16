@@ -380,7 +380,7 @@ p.reason-list-small {
 }
 
 .interest-block {
-  padding: 0 350px;
+ text-align: center;
 }
 
 .interest-block-header {
@@ -390,14 +390,13 @@ p.reason-list-small {
 }
 
 .interest-block-text {
+  display: block;
   margin: 0;
   width: 435px;
   line-height: 24px;
-  margin: 0;
-  margin-top: 28px;
-  margin-bottom: 45px;
-  margin-left: 28px;
+  margin: 28px auto 45px;
   color: #333333;
+  text-align: center;
 }
 
 .hotel-search {
