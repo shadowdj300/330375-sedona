@@ -226,21 +226,13 @@ a.logo-element {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  background: url(../img/background-photo.jpg) 50% -56px no-repeat;
+  background: url(../img/shape1.png) 50% 100% no-repeat,
+  url(../img/background-photo.jpg) 50% -56px no-repeat;
   width: 100%;
 }
 
 .index-logo img {
   margin-top: 76px;
-}
-
-.img-mask {
-  position: absolute;
-  width: 100%;
-  height: 57px;
-  left: 0;
-  bottom: 0;
-  background: url(../img/shape1.png)
 }
 
 .title {
