@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="container shadow">
-    <header class="main-header clearfix">
-            <nav class="main-navigation main-navigation-left">
+      <header class="main-header clearfix">
+            <nav class="main-navigation">
               <ul>
                 <li>
                   <a class="nav-element" href="info.html">Информация</a>
@@ -17,79 +17,72 @@
                 <li>
                   <a class="nav-element"  href="photo.html">Фото и видео</a>
                 </li>
-              </ul>
-            </nav>
-                  <a class="logo-element to-main-page" href="index.html"><img src="img/small-logo.png"
-                    width="140" height="70" border="0" alt="Логотип"></a>
-            <nav class="main-navigation main-navigation-right">
-              <ul>
-                <li>
-                  <a class="nav-element"  href="map.html">Карта штата</a>
-                </li>
                 <li>
                   <a class="nav-element"  href="inner.html">Гостиницы</a>
                 </li>
+                <li>
+                  <a class="nav-element"  href="map.html">Карта штата</a>
+                </li>
               </ul>
             </nav>
-    </header>
+            <a class="logo-element to-main-page" href="index.html"><img src="img/small-logo.png"
+            width="140" height="70" border="0" alt="Логотип"></a>
+      </header>
     <main class="container">
       <section class="hotel-filters clearfix">
+        <form class="filters" action="#" method="post" id="filt">
         <div class="left-column">
         <div class="hotel-filters-infrastructure">
           <h2 class="hotel-filters-title">Инфраструктура:</h2>
-            <form class="filters-inf" action="#" method="post" id="inf">
               <div>
-                <input type="checkbox" name="infrastructure" value="1" id="inf-1"
+                <input type="checkbox" name="infrastructure" value="1" id="filt-1"
               checked>
-                <label for="inf-1">Бассейн</label>
+                <label for="filt-1">Бассейн</label>
               </div>
               <div>
-                <input type="checkbox" name="infrastructure" value="2" id="inf-2">
-                <label for="inf-2">Парковка</label>
+                <input type="checkbox" name="infrastructure" value="2" id="filt-2">
+                <label for="filt-2">Парковка</label>
               </div>
               <div>
-                <input type="checkbox" name="infrastructure" value="3" id="inf-3">
-                <label for="inf-3">Wi-fi</label>
+                <input type="checkbox" name="infrastructure" value="3" id="filt-3">
+                <label for="filt-3">Wi-fi</label>
               </div>
-            </form>
           </div>
           <div class="hotel-filters-type">
             <h2 class="hotel-filters-title">Тип жилья:</h2>
-              <form class="filters-type" action="#" method="post" id="type">
                 <div>
-                  <input type="checkbox" name="type" value="1" id="type-1"
+                  <input type="checkbox" name="type" value="1" id="filt-4"
                 checked>
-                  <label for="type-1">Гостиница</label>
+                  <label for="filt-4">Гостиница</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="type" value="2" id="type-2"
+                  <input type="checkbox" name="type" value="2" id="filt-5"
                   checked>
-                  <label for="type-2">Мотель</label>
+                  <label for="filt-5">Мотель</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="type" value="3" id="type-3"
+                  <input type="checkbox" name="type" value="3" id="filt-6"
                   checked>
-                  <label for="type-3">Апартаменты</label>
+                  <label for="filt-6">Апартаменты</label>
                 </div>
-              </form>
             </div>
             </div>
             <div class="right-column">
             <div class="hotel-filter-price">
               <p class="filter-price-header">Стоимость в сутки (Р):</p>
               <div class="filter-price-search">
-                <form class="price-number" action="#" method="post" id="price">
+                <div class="price-number">
                   <div class="price-low">
-                    <label for="price-low">От</label>
-                    <input id="price-low" class="min-price" type="number"
+                    <label for="filt-7">От</label>
+                    <input id="filt-7" class="min-price" type="number"
                     max="5000" min="0" value="0">
                   </div>
                   <div class="price-high">
-                    <label for="price-high">До</label>
-                    <input id="price-high" class="max-price" type="number"
+                    <label for="filt-8">До</label>
+                    <input id="filt-8" class="max-price" type="number"
                     max="5000" min="0" value="3000">
                   </div>
-                </form>
+                </div>
               </div>
               <div class="range-control">
               <div class="scale">
@@ -97,9 +90,10 @@
                 <button class="scale-slider scale-slider-max" type="button" tabindex="-1"></button>
               </div>
             </div>
-            <a href="submit.html" class="search-button" onclick="" >Показать</a>
+            <a href="submit.html" class="search-button" onclick="document.getElementById('filt').submit()">Показать</a>
           </div>
           </div>
+          </form>
       </section>
       <section class="results">
         <div class="results-wrap">

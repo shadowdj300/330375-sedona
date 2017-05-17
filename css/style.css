@@ -33,8 +33,6 @@ body {
   outline: 0;
   vertical-align: baseline;
   background-color: #f2f2f2;
-  padding-left: 6%;
-  padding-right: 6%;
 }
 
 .p {
@@ -152,6 +150,11 @@ li {
   list-style: none;
 }
 
+.main-navigation {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
 .main-navigation li {
   display: inline-block;
   width: 240px;
@@ -166,9 +169,26 @@ li {
   background: tranperent;
 }
 
-.main-navigation-left {
+.main-navigation li:nth-child(1) {
   float: left;
+  text-align: left;
 }
+
+.main-navigation li:nth-child(2) {
+  float: left;
+  text-align: left;
+}
+
+.main-navigation li:nth-child(4) {
+  float: right;
+  text-align: right;
+}
+
+.main-navigation li:nth-child(3) {
+  float: right;
+  text-align: right;
+}
+
 
 .main-navigation-right {
   float: right;
@@ -406,6 +426,7 @@ p.reason-list-small {
 
 .hotel-search-btn-text {
   font-size: 21px;
+  font-weight: 700;
   line-height: 86px;
   color: #ffffff;
   margin: 0 auto;
@@ -709,7 +730,7 @@ footer {
 .hotel-filters {
   min-height: 217px;
   box-sizing: border-box;
-  padding: 24px 38px 0px 72px;
+  padding: 0px 72px 0px 72px;
   color: #ffffff;
   text-align: left;
   background: rgba(115, 87, 78, 0.6) url("../img/background-blured.jpg") no-repeat scroll 0px -57px;
@@ -724,7 +745,7 @@ footer {
 .hotel-filters .right-column {
   float: right;
   box-sizing: border-box;
-  width: 351px;
+  width: 317px;
 }
 
 .hotel-filters-infrastructure {
@@ -734,18 +755,15 @@ footer {
   vertical-align: top;
 }
 
-.hotel-tilters-type {
+.hotel-filters-type {
   display: inline-block;
   float: left;
   vertical-align: top;
 }
 
-.filters-inf {
-  display: inline-block;
-}
-
-.filters-type {
-  display: inline-block;
+.filters {
+  font-family: "PT Sans", "Georgia", Sans-serif;
+  padding-top: 24px;
 }
 
 .hotel-filters-title {
@@ -756,11 +774,11 @@ footer {
   margin-bottom: 20px;
 }
 
-.filters-inf input[type="checkbox"] {
+.filters input[type="checkbox"] {
   display: none;
 }
 
-.filters-inf input[type="checkbox"] + label::before {
+.filters input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
   height: 22px;
@@ -772,57 +790,30 @@ footer {
   border-radius: 5px;
 }
 
-.filters-inf input[type="checkbox"]:checked+label::before {
+.filters input[type="checkbox"]:checked+label::before {
   background: transparent url("../img/checked.png") repeat scroll 0% 0%;
 }
 
-.filters-inf div {
+.hotel-filters-infrastructure div {
   padding: 0;
-  margin: 0;
   margin-bottom: 17px;
-}
-
-.filters-inf div {
   font-weight: 400;
 }
 
-.filters-inf label {
-  cursor: pointer;
-}
-
-.filters-type input[type="checkbox"] {
-  display: none;
-}
-
-.filters-type input[type="checkbox"] + label::before {
-  content: "";
-  display: inline-block;
-  height: 22px;
-  width: 22px;
-  background: rgba(255, 255, 255, 0.3) none repeat scroll 0% 0%;
-  vertical-align: middle;
-  margin-right: 19px;
-  margin-bottom: 4px;
-  border-radius: 5px;
-}
-
-.filters-type input[type="checkbox"]:checked+label::before {
-  background: transparent url("../img/checked.png") repeat scroll 0% 0%;
-}
-
-.filters-type div {
+.hotel-filters-type div {
   padding: 0;
-  margin: 0;
   margin-bottom: 17px;
+  font-weight: 400;
 }
 
-.filters-type label {
-  font-weight: 400;
+.filters label {
   cursor: pointer;
 }
+
 
 .hotel-filter-price {
   width: 325px;
+  margin: 0;
 }
 
 .filter-price-header {
@@ -851,6 +842,7 @@ footer {
   box-sizing: border-box;
   text-align: center;
   margin-left: 10px;
+  font-weight: 400;
 }
 
 .price-high {
@@ -861,6 +853,7 @@ footer {
   box-sizing: border-box;
   text-align: center;
   margin-left: 18px;
+  font-weight: 400;
 }
 
 .price-number input {
@@ -966,7 +959,7 @@ input[type='number'] {
 }
 
 .results-wrap {
-  padding: 0px 38px 0px 72px;
+  padding: 0px 72px 0px 72px;
 }
 
 .sorting {
@@ -980,7 +973,7 @@ input[type='number'] {
   float:left;
   display: inline-block;
   text-align: left;
-  width: 90%;
+  width: 96%;
   height: 20px;
   box-sizing: border-box;
 }
@@ -1101,7 +1094,7 @@ a.sorting-item-active {
 }
 
 .searched-wrap {
-padding: 0px 70px 0px 72px;
+padding: 0px 72px 0px 72px;
 }
 
 .item-wrap {
